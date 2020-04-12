@@ -1,5 +1,5 @@
 type Query {
-    department(code: String!): Department
+    department(code: DepartmentCode!): Department
     departments: [Department!]!
 }
 type Department {

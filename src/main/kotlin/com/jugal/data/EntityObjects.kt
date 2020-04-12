@@ -1,11 +1,14 @@
 package com.jugal.data
-
+import com.jugal.data.DepartmentCode.IT
+import com.jugal.data.DepartmentCode.SALES
 import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.EnumType.STRING
 import javax.persistence.Enumerated
 import javax.persistence.Id
 import javax.persistence.Table
+
+enum class DepartmentCode { SALES, IT, HR }
 
 @Entity
 @Table(name = "department")
@@ -15,7 +18,7 @@ data class Department(
     val departmentID: Int,
     @Enumerated(STRING)
     @Column(name = "dept_code")
-    val code: DepartmentCode = DepartmentCode.SALES,
+    val code: DepartmentCode = SALES,
     @Column(name = "dept_name")
     val name: String,
     @Column(name = "dept_address")
@@ -37,5 +40,3 @@ data class Employee(
     @Column(name = "emp_technical_skills")
     val technicalSkills: String?
 )
-
-enum class DepartmentCode { SALES, IT, HR }

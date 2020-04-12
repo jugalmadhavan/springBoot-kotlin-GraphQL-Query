@@ -13,7 +13,7 @@
     <artifactId>springBoot-kotlin-GraphQL-Query</artifactId>
     <version>1.0.0</version>
     <name>springBoot-kotlin-GraphQL-Query</name>
-    <description>Example project to query data as GraphQL endpoint </description>
+    <description>Example project to query data as GraphQL endpoint</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -67,8 +67,15 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <groupId>org.jetbrains.kotlinx</groupId>
+            <artifactId>kotlinx-coroutines-core</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlinx</groupId>
+            <artifactId>kotlinx-coroutines-core-common</artifactId>
+            <version>
+                1.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

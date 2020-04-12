@@ -1,0 +1,23 @@
+type Query {
+    department(code: String!): Department
+    departments: [Department!]!
+}
+type Department {
+    departmentID: Int!
+    code: DepartmentCode!
+    name: String!
+    address: String!
+    employees: [Employee!]!
+}
+
+type Employee{
+    employeeID: Int!
+    name: String!
+    designation: String!
+    technicalSkills: String
+}
+enum DepartmentCode {
+    SALES
+    IT
+    HR
+}
